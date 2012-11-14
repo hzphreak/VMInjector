@@ -1,0 +1,51 @@
+
+                V M I n j e c t o r
+
+             (c) 2012 by Marco Batista
+         <marco.batista [at] secforce.com>
+
+       Licensed under GPLv3 (see LICENSE file)
+
+Overview:
+------------
+VMInjector is a tool designed to bypass OS login authentication screens of major operating systems running on VMware Workstation/Player, by using direct memory manipulation.
+
+Description:
+------------
+VMInjector is a tool which manipulates the memory of VMware guests in order to bypass the operation system authentication screen.
+VMware handles the resources allocated to guest operating systems, including RAM memory. VMInjector injects a DLL library into the VMWare process to gain access to the mapped resources. The DLL library works by parsing memory space owned by the VMware process and locating the memory-mapped RAM file, which corresponds to the guest's RAM image. By manipulating the allocated RAM file and patching the function in charge of the authentication, an attacker gains unauthorised access to the underlying virtual host.
+VMInjector can currently bypass locked Windows, Ubuntu and Mac OS X operation systems.
+The in-memory patching is non-persistent, and rebooting the guest virtual machine will restore the normal password functionality. 
+
+Attacking Scenarios:
+------------
+VMInjector can be used if the password of a virtual host is forgotten and requires reset.
+Most usually, this tool can be used during penetration testing activities, when access to a VMWare host is achieved and the attacker is looking to gain additional access to the guests running in such host.
+
+Requirements:
+------------
+Windows machine (with administrative access);
+VMware workstation or player edition;
+A locked guest VM;
+
+Usage:
+------------
+VMInjector consists of 2 parts:
+The DLL injection application (python script or provided converted executable)
+DLL library (x86 and x64)
+
+The tool supports both x86 and x64 bit architectures by providing both DLLs. One may use his own DLL injector to select the guest virtual machine running on the host. 
+
+In order to run the tool, execute the VMInjector (32 or 64) executable provided from the command line 
+VMWare runs each guest in a different process. VMInjector needs to be pointed to the process running the guest which requires bypass. Once the user chooses a process, it will inject the DLL into the chosen target. 
+Once the DLL is injected, the user will need to specify the OS, so that the memory patching can be accomplished
+ 
+Disclaimer:
+------------
+This tool is for legal purposes only. The code is released under GPLv3 license.
+
+Thanks and references:
+------------
+I would like to thank Michael Ligh for his valuable research on injecting shellcode into guest virtual machines back in 2006.
+
+I would also like to thank Carsten Maartmann-Moe for is work on Inception, a tool which can unlock locked Windows, Ubuntu and OS X machines by using the IEEE 1394 FireWire trick. This was first showcased by the (now obsolete) winlockpwn tool.

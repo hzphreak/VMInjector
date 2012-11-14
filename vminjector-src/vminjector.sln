@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vminjector32", "vminjector32.vcproj", "{6BCE6714-563F-4AC4-8A4B-6A01AA36F51D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vminjector64", "vminjector64.vcproj", "{650EE5A2-FC5D-481D-B2A1-1707F0E4C68C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BCE6714-563F-4AC4-8A4B-6A01AA36F51D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6BCE6714-563F-4AC4-8A4B-6A01AA36F51D}.Debug|Win32.Build.0 = Debug|Win32
+		{6BCE6714-563F-4AC4-8A4B-6A01AA36F51D}.Debug|x64.ActiveCfg = Debug|Win32
+		{6BCE6714-563F-4AC4-8A4B-6A01AA36F51D}.Release|Win32.ActiveCfg = Release|Win32
+		{6BCE6714-563F-4AC4-8A4B-6A01AA36F51D}.Release|Win32.Build.0 = Release|Win32
+		{6BCE6714-563F-4AC4-8A4B-6A01AA36F51D}.Release|x64.ActiveCfg = Release|Win32
+		{650EE5A2-FC5D-481D-B2A1-1707F0E4C68C}.Debug|Win32.ActiveCfg = Debug|x64
+		{650EE5A2-FC5D-481D-B2A1-1707F0E4C68C}.Debug|Win32.Build.0 = Debug|x64
+		{650EE5A2-FC5D-481D-B2A1-1707F0E4C68C}.Debug|x64.ActiveCfg = Debug|x64
+		{650EE5A2-FC5D-481D-B2A1-1707F0E4C68C}.Debug|x64.Build.0 = Debug|x64
+		{650EE5A2-FC5D-481D-B2A1-1707F0E4C68C}.Release|Win32.ActiveCfg = Release|x64
+		{650EE5A2-FC5D-481D-B2A1-1707F0E4C68C}.Release|Win32.Build.0 = Release|x64
+		{650EE5A2-FC5D-481D-B2A1-1707F0E4C68C}.Release|x64.ActiveCfg = Release|x64
+		{650EE5A2-FC5D-481D-B2A1-1707F0E4C68C}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
