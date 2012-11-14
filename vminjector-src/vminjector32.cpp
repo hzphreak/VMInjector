@@ -1,6 +1,6 @@
 /*
  *
- * VMInjector x86 DLL v0.1 (c) 2012 by Marco Batista / Secforce <marco.batista@secforce.com>
+ * VMInjector x86 DLL v0.1 (c) 2012 by Marco Batista / <marco.batista [at] secforce.com>
  * 
  * This works by parsing memory space owned by the vmware-vmx.exe process
  * and locating the memory-mapped .vmem file, which corresponds to the 
